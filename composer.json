@@ -1,0 +1,14 @@
+{
+    "name": "slims/simbio2",
+    "description": "SIMBIO 2 PHP Library",
+    "type": "library",
+    "license": "GPL v3",
+    "authors": [
+        {
+            "name": "Arie Nugraha",
+            "email": "dicarve@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
