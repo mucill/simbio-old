@@ -16,4 +16,4 @@ matrix:
 
 sudo: false
 
-script: vendor/bin/phpunit test/Database
+script: phpunit test/Database
