@@ -6,11 +6,16 @@ php:
 
 before_script:
   - composer install
+  - mysql -e 'create database slims9;'
+
+services:
+  - mysql
+
+
 
 matrix:
     allow_failures:
         - php: 7.0
-
 sudo: false
 
 script: phpunit test/Database
