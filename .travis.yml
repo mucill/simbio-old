@@ -11,8 +11,7 @@ matrix:
         - php: 7.0
 
 before_script:
-    - cd ../..
-    - cd test/
+  - cd test/
 
 install:
   # add composer's global bin directory to the path
