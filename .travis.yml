@@ -1,8 +1,8 @@
 language: php
 
 php:
+  - 5.5
   - 5.6
-  - 7.0
 
 before_script:
   - composer install
@@ -11,11 +11,6 @@ before_script:
 services:
   - mysql
 
-
-
-matrix:
-    allow_failures:
-        - php: 7.0
 sudo: false
 
 script: phpunit test/Database
