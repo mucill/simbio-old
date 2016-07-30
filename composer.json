@@ -10,5 +10,7 @@
         }
     ],
     "minimum-stability": "beta",
-    "require": {}
+    "require": {
+        "phpunit/phpunit": "^5.4"
+    }
 }
