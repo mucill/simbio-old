@@ -12,5 +12,10 @@
     "minimum-stability": "beta",
     "require": {
         "phpunit/phpunit": "^5.4"
-    }
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Simbio\\" : "src"
+        }
+    } 
 }
