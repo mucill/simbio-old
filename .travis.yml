@@ -9,14 +9,11 @@ php:
 
 before_script:
   - composer self-update
-  - composer install --prefer-source --no-interaction --dev
 
 matrix:
     allow_failures:
         - php: 7.0
 
 sudo: false
-
-install: travis_retry composer install --no-interaction --prefer-source
 
 script: vendor/bin/phpunit test/Database
