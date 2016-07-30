@@ -1,11 +1,6 @@
 <?php 
-// namespace test;
 require 'vendor/autoload.php';
 use PHPUnit\Framework\TestCase;
-
-// /**
-// * Database
-// */
 class initLoad extends TestCase
 {
     function testConnection()
@@ -17,6 +12,6 @@ class initLoad extends TestCase
         $db_username    = 'root';
 
         $conn           = new Simbio\Database\Mysql\SimbioMysql($db_host, $db_username, $db_passwd, $db_name);
-        return $this->assertNotNull($conn);
+        return $this->assertEmpty($conn->connect());
     }    
 }

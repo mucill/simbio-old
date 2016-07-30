@@ -61,7 +61,7 @@ class SimbioMysql
      *
      * @return  void
      */
-    private function connect()
+    public function connect()
     {
         if ($this->db_socket) {
             $this->res_conn = @mysql_connect($this->db_host.":".$this->db_socket, $this->db_username, $this->db_passwd);
