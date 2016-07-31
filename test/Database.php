@@ -15,6 +15,4 @@ class initLoad extends PHPUnit_Framework_TestCase
         
         return $this->assertEmpty($conn->connect());
     }
-
-    public function 
 }
